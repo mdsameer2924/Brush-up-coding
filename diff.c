@@ -22,6 +22,10 @@ int main()
     printf("\nsum of even index: %d\n",even);
     printf("sum of odd index: %d\n",odd);
 
+    // Let's Find the difference between them
+    int diff=even-odd;
+    printf("The different is: %d\n",diff);
+
 
     return 0;
 }
