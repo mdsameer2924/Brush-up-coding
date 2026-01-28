@@ -1,17 +1,17 @@
-// Print an  array in reverse 
-
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-
-    int arr[]={3,5,6,7,4,45,12};
-    int rev=arr[0];
-    int count=sizeof(arr)/sizeof(arr[0]); // 20 size/4 = 5-1 = 4
-    for (int i=count-1; i>-1; i--)
-    {
-       rev=arr[i];
-       printf("%d\t",rev);
+    int n, arr[100];
+    printf("Enter the number to ensure the elemetns of array you want: ");
+    scanf("%d",&n);
+    for(int i=0; i<n; i++){
+        printf("Enter index [%d] value: ",i);
+        scanf("%d",&arr[i]);
     }
-    printf("\n");
+    // Reverse
+    for (int i=n-1; i>-1; i--){
+        printf("%d\t",arr[i]);
+    }
+
     return 0;
 }
