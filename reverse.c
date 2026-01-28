@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int arr[100];
-    int count=sizeof(arr)/sizeof(arr[0]);
-    for(int i=0; i<count; i++){
+    int n, arr[100];
+    printf("Enter the number to ensure the elemetns of array you want: ");
+    scanf("%d",&n);
+    for(int i=0; i<n; i++){
         printf("Enter index [%d] value: ",i);
         scanf("%d",&arr[i]);
     }
     // Reverse
-    for (int i=count-1; i>-1; i--){
+    for (int i=n-1; i>-1; i--){
         printf("%d\t",arr[i]);
     }
 
