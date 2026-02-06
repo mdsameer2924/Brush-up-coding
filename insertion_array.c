@@ -6,7 +6,7 @@ void insert(int arr[],int pos, int val,int n);
 int main()
 {
     // declare an array
-    int arr[5]={3,5,9,8};
+    int arr[5]={3,5,9,7};
 
     // insert value in an array via calling functions
     insert(arr,1,2,5);
