@@ -9,7 +9,7 @@ int main()
     int arr[5]={3,5,9,8};
 
     // insert value in an array via calling functions
-    insert(arr,3,2,5);
+    insert(arr,1,2,5);
 
     return 0;
 }
@@ -19,11 +19,14 @@ void insert(int arr[],int pos, int val, int n){
     
     // shifting a value to left and make space of an array right to left shift towards position of an index 
     for (int i=n-1; i > pos-1; i--){
-        arr[i]=arr[i-1];
+
+        // to check iteration behaviour
+        printf("%d\n",i);
+         arr[i]=arr[i-1];
     }
 
     // insert val at that position right now
-    // arr[pos]=val;
+    arr[pos]=val;
 
     // print the modified array
     for (int i=0; i<n; i++)
